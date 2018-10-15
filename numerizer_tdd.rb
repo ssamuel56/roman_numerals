@@ -56,4 +56,7 @@ class Test < Minitest::Test
   def test_romanize_for_1449
     assert_equal("MCDXLIX", romanize(1449, numerals()))
   end
+  def checking_hash_for_reverse
+    assert_equal(Hash, numerals_reversed().class)
+  end
 end
