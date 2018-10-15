@@ -2,15 +2,16 @@ def numerals
   num_key = {
     1000 => "M", 900 => "CM", 500 => "D", 400 => "CD", 100 => "C",
     90 => "XC", 50 => "L", 40 => "XL", 10 => "X", 9 => "IX", 5 => "V",
-    3 => "IV", 1 => "I"
+    3 => "IV", 1 => "I", 0 => ""
   }
 end
 
 def romanize(n)
-  roman = ""
-  numerals.each do |value, letter|
-    roman << letter*(n / value)
-    n = n % value
-  end
-  return roman
+  return "" if n == 0
+    roman = ""
+    numerals.each do |value, letter|
+      roman << letter*(n / value)
+      n = n % value
+    end
+    return roman
 end
