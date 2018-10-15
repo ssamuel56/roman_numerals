@@ -21,6 +21,6 @@ class Test < Minitest::Test
     assert_equal("XC", numerals.fetch(90))
   end
   def test_romanize_for_0
-    assert_equal(0, numerals.fetch(0))
+    assert_equal("", numerals.fetch(0))
   end
 end
