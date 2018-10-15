@@ -45,6 +45,6 @@ class Test < Minitest::Test
     assert_equal("CCXLVI", romanize(246, numerals()))
   end
   def test_romanize_for_482
-    assert_equal("", romanize(482, numerals()))
+    assert_equal("CDLXXXII", romanize(482, numerals()))
   end
 end
