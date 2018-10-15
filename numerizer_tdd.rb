@@ -5,8 +5,11 @@ class Test < Minitest::Test
   def test_for_1
     assert_equal(1, 1)
   end
-  def test_for_hash
+  def test_for_hash_numerals
     assert_equal(Hash, numerals.class)
+  end
+  def test_for_hash_numerals_reversed
+    assert_equal(Hash, numerals_reversed.class)
   end
   def test_hash_value_of_0
     assert_equal("X", numerals.fetch(10))
@@ -20,10 +23,16 @@ class Test < Minitest::Test
   def test_hash_value_of_90
     assert_equal("XC", numerals.fetch(90))
   end
+  def test_hash_value_of_47
+    assert_equal("XL", numerals.fetch(40))
+  end
   def test_romanize_for_0
-    assert_equal("", romanize(0, hash))
+    assert_equal("", romanize(0, numerals()))
   end
   def test_romanize_for_1
-    assert_equal("I", romanize(1, hash))
+    assert_equal("I", romanize(1, numerals()))
+  end
+  def test_romanize_for_48
+    assert_equal("", romanize(59, numerals()))
   end
 end
