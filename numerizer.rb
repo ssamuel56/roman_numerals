@@ -6,7 +6,8 @@ def numerals
   }
 end
 
-def romanize(n)
+
+def romanize(n, hash)
   if n == 0
   return ""
   else

@@ -21,9 +21,9 @@ class Test < Minitest::Test
     assert_equal("XC", numerals.fetch(90))
   end
   def test_romanize_for_0
-    assert_equal("", romanize(0))
+    assert_equal("", romanize(0, hash))
   end
   def test_romanize_for_1
-    assert_equal("I", romanize(1))
+    assert_equal("I", romanize(1, hash))
   end
 end
