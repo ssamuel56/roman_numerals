@@ -33,6 +33,6 @@ class Test < Minitest::Test
     assert_equal("I", romanize(1, numerals()))
   end
   def test_romanize_for_48
-    assert_equal("", romanize(59, numerals()))
+    assert_equal("LIX", romanize(59, numerals()))
   end
 end
