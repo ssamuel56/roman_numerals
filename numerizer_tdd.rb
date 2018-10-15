@@ -84,6 +84,6 @@ class Test < Minitest::Test
     assert_equal(900, romanize("CM", numerals_reversed))
   end
   def test_romanize_reverse_for_cd
-    assert_equal(0, romanize("CD", numerals_reversed))
+    assert_equal(400, romanize("CD", numerals_reversed))
   end
 end
