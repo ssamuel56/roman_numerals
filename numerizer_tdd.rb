@@ -74,4 +74,7 @@ class Test < Minitest::Test
   def test_romanize_reverse_for_ix
     assert_equal(9, romanize("IX", numerals_reversed))
   end
+  def test_romanize_reverse_for_xl
+    assert_equal(0, romanize("XL", numerals_reversed))
+  end
 end
