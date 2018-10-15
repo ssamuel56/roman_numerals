@@ -8,7 +8,10 @@ class Test < Minitest::Test
   def test_for_hash
     assert_equal(Hash, numerals.class)
   end
-  def test_hash_vulue_od_1000
+  def test_hash_vulue_of_0
     assert_equal("", numerals.fetch(0))
+  end
+  def test_hash_vulue_of_1000
+    assert_equal("", numerals.fetch(1000))
   end
 end
