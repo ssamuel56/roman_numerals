@@ -53,4 +53,7 @@ class Test < Minitest::Test
   def test_romanize_for_944
     assert_equal("CMXLIV", romanize(944, numerals()))
   end
+  def test_romanize_for_1449
+    assert_equal("", romanize(1449, numerals()))
+  end
 end
