@@ -5,3 +5,14 @@ def numerals
     3 => "IV", 1 => "I", 0 => ""
   }
 end
+
+def romanize(n)
+  numerals_reversed = numerals.invert
+  roman = ""
+
+  numerals.each do |num, value|
+    roman += num*(n / value)
+    n = n % value
+  end
+  return roman
+end

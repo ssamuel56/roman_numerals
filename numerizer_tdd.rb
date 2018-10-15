@@ -20,7 +20,7 @@ class Test < Minitest::Test
   def test_hash_value_of_90
     assert_equal("XC", numerals.fetch(90))
   end
-  def test_returns_empty_string_for_0
-    assert_equal(0, numerize(0))
+  def test_romanize_for_0
+    assert_equal(0, numerals.fetch(0))
   end
 end
