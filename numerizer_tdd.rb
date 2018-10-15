@@ -80,4 +80,7 @@ class Test < Minitest::Test
   def test_romanize_reverse_for_xc
     assert_equal(90, romanize("XC", numerals_reversed))
   end
+  def test_romanize_reverse_for_cm
+    assert_equal(0, romanize("CM", numerals_reversed))
+  end
 end
