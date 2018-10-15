@@ -60,6 +60,6 @@ class Test < Minitest::Test
     assert_equal(Hash, numerals_reversed().class)
   end
   def test_romanize_for_I
-    assert_equal("", romanize("I", numerals_reversed))
+    assert_equal(1, romanize("I", numerals_reversed))
   end
 end
