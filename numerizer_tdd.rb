@@ -6,6 +6,6 @@ class Test < Minitest::Test
     assert_equal(1, 1)
   end
   def test_for_hash
-    assert_equal(Hash, num_key().class)
+    assert_equal(Hash, numerals.class)
   end
 end
