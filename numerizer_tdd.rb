@@ -24,6 +24,6 @@ class Test < Minitest::Test
     assert_equal("", romanize(0))
   end
   def test_romanize_for_1
-    assert_equal("", romanize(1))
+    assert_equal("I", romanize(1))
   end
 end
