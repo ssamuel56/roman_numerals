@@ -9,7 +9,7 @@ class Test < Minitest::Test
     assert_equal(Hash, numerals.class)
   end
   def test_hash_value_of_0
-    assert_equal("", numerals.fetch(0))
+    assert_equal("X", numerals.fetch(10))
   end
   def test_hash_value_of_1000
     assert_equal("M", numerals.fetch(1000))
@@ -22,5 +22,8 @@ class Test < Minitest::Test
   end
   def test_romanize_for_0
     assert_equal("", romanize(0))
+  end
+  def test_romanize_for_1
+    assert_equal("", romanize(1))
   end
 end
