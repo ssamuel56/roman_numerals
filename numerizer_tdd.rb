@@ -65,4 +65,7 @@ class Test < Minitest::Test
   def test_romanize_for_I
     assert_equal(1, romanize("I", numerals_reversed))
   end
+  def test_romanize_for_I
+    assert_equal(0, romanize("IV", numerals_reversed))
+  end
 end
