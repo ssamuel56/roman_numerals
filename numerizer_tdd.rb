@@ -39,6 +39,9 @@ class Test < Minitest::Test
     assert_equal("LXXIV", romanize(74, numerals()))
   end
   def test_romanize_for_100
-    assert_equal("", romanize(100, numerals()))
+    assert_equal("C", romanize(100, numerals()))
+  end
+  def test_romanize_for_246
+    assert_equal("", romanize(246, numerals()))
   end
 end
