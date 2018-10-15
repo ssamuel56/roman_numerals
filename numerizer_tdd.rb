@@ -14,4 +14,7 @@ class Test < Minitest::Test
   def test_hash_vulue_of_1000
     assert_equal("M", numerals.fetch(1000))
   end
+  def test_hash_vulue_od_500
+    assert_equal("", numerals.fetch(500))
+  end
 end
