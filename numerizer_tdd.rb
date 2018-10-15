@@ -18,6 +18,6 @@ class Test < Minitest::Test
     assert_equal("D", numerals.fetch(500))
   end
   def test_hash_vulue_od_90
-    assert_equal("", numerals.fetch(90))
+    assert_equal("XC", numerals.fetch(90))
   end
 end
